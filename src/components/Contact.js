@@ -35,7 +35,7 @@ export class Contact extends Component {
         <h1 data-aos="fade-right" className="project-h1-title">
           Contact &#9993;
         </h1>
-        <form method="POST" data-netlify="true" className="contact-div">
+        <form name="contact" method="POST" data-netlify="true" className="contact-div">
           <div className="contact-div-inner">
             <p className="contact-p">Name</p>
             <input
@@ -65,10 +65,9 @@ export class Contact extends Component {
               placeholder="Message"
               className="contact-textarea"
             ></textarea>
-            <div data-netlify-recaptcha="true"/>
-          </div>
+            <div data-netlify-recaptcha="true"/></div>
           <div>
-          <button className="contact-button" onClick={this.handleSubmit}>Submit</button>
+          <button type ="submit" className="contact-button" >Submit</button>
           </div>
         </form>
     <ScrollToTop/>
