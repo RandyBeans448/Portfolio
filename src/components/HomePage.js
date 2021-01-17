@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import ParticlesContainer from "./Particles";
-import ParticleDiv from "./ParticleDiv"
+// import ParticlesContainer from "./Particles";
+// import ParticleDiv from "./ParticleDiv"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Particles from "react-tsparticles";
@@ -29,7 +29,7 @@ export class HomePage extends Component {
             </p>
           </div>
         </div>
-        <ParticleDiv/>
+        {/* <ParticleDiv/> */}
       </div>
     );
   }
