@@ -7,8 +7,5 @@ import NavBar from "./components/NavBar";
 export default () => (
   <div className="container">
     <NavBar />
-    <div id="tsparticles" className="tsparticles">
-          <ParticlesContainer />
-        </div>
   </div>
 );
