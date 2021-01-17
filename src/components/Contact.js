@@ -35,10 +35,13 @@ export class Contact extends Component {
         <h1 data-aos="fade-right" className="project-h1-title">
           Contact &#9993;
         </h1>
-        <form name="contact" method="POST" data-netlify="true" className="contact-div">
+        <form name="contact" action="/contact" method="POST" data-netlify="true" className="contact-div">
           <div className="contact-div-inner">
+            <input type="hidden" name="form-name" value="contact"></input>
             <p className="contact-p">Name</p>
             <input
+            required
+            type="text"
               name="name"
               id="name"
               placeholder="Name..."
@@ -46,6 +49,8 @@ export class Contact extends Component {
             ></input>
             <p className="contact-p">Email</p>
             <input
+            required
+            type="email"
               name="email"
               id="email"
               placeholder="Email..."
@@ -60,6 +65,7 @@ export class Contact extends Component {
             ></input>
             <p className="contact-p">Message</p>
             <textarea
+            required
               name="message"
               id="message"
               placeholder="Message"
