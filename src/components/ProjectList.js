@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ParticleDiv from "./ParticleDiv"
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -378,7 +378,7 @@ export class ProjectList extends Component {
             </div>
           </div>
         </div>
-        <ParticleDiv/>
+       
       </div>
     );
   }
