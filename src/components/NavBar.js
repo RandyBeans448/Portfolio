@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import HomePage from "./HomePage";
 import ProjectList from "./ProjectList";
-import ParticleDiv from "./ParticleDiv"
 import Contact from "./Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -40,7 +39,6 @@ constructor(props) {
       <HomePage/>
       <ProjectList/>
       <Contact refProp={this.scrollDiv}/>
-      <ParticleDiv/>
       </div>
     );
 
