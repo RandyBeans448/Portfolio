@@ -28,7 +28,7 @@ export class HomePage extends Component {
           </div>
         </div>
         <div className="tsparticles">
-          <ParticlesContainer />
+         
         </div>
       </div>
     );
