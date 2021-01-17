@@ -4,11 +4,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export class HomePage extends Component {
+
   componentDidMount() {
     AOS.init({
       duration: 2500,
     });
   }
+  
   render() {
     return (
       <div>

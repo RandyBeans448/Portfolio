@@ -1,18 +1,18 @@
 import React, { Component } from "react";
+import "./ScrollToTop"
 import AOS from "aos";
-// import { db } from "./FireBase";
 import "aos/dist/aos.css";
+import ScrollToTop from "./ScrollToTop";
 
 export class Contact extends Component {
-  constructor() {
-    super();
+
+  constructor(props) {
+    super(props);
     this.state = {
       name: "",
       email: "",
       message: "",
     };
-
-    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -21,64 +21,57 @@ export class Contact extends Component {
     });
   }
 
-  handleChange = (event) => {
-    const target = event.target;
-    const value = target.value;
-    const id = target.id;
-    this.setState({
-      [id]: value,
+  backToTheTop = () => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
     });
   };
 
-  // handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   const { name, email, message } = this.state;
-  //   db.collection("contacts")
-  //     .add({
-  //       name: name,
-  //       email: email,
-  //       message: message,
-  //     })
-  //     .then(() => {
-  //       console.log("Message sent");
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // };
-
   render() {
+    console.log(this.state.contactRef)
     return (
-      <div data-aos="fade">
+      <div ref={this.props.refProp} data-aos="fade">
         <h1 data-aos="fade-right" className="project-h1-title">
           Contact &#9993;
         </h1>
-        <form onChange={this.handleSubmit} className="contact-div">
+        <form method="POST" data-netlify="true" className="contact-div">
           <div className="contact-div-inner">
             <p className="contact-p">Name</p>
             <input
-              onChange={this.handleChange}
+              name="name"
               id="name"
               placeholder="Name..."
               className="contact-input"
             ></input>
             <p className="contact-p">Email</p>
             <input
-              onChange={this.handleChange}
+              name="email"
               id="email"
               placeholder="Email..."
               className="contact-input"
             ></input>
+            <p className="contact-p">Subject</p>
+            <input
+              name="subject"
+              id="subject"
+              placeholder="Subject..."
+              className="contact-input"
+            ></input>
             <p className="contact-p">Message</p>
             <textarea
-              onChange={this.handleChange}
+              name="message"
               id="message"
               placeholder="Message"
               className="contact-textarea"
             ></textarea>
-            <button onClick={this.handleSubmit}>Submit</button>
+            <div data-netlify-recaptcha="true"/>
+          </div>
+          <div>
+          <button className="contact-button" onClick={this.handleSubmit}>Submit</button>
           </div>
         </form>
+    <ScrollToTop/>
       </div>
     );
   }

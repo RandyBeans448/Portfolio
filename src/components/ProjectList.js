@@ -3,15 +3,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export class ProjectList extends Component {
+  constructor(props) {
+    super(props)
+  }
+  
   componentDidMount() {
     AOS.init({
       duration: 2500,
     });
+    
   }
   render() {
     return (
       <div>
-        <h1 data-aos="fade-right" className="project-h1-title">
+        <h1 id="project-list" data-aos="fade-right" className="project-h1-title">
           Projects
         </h1>
         <div className="projects-page">
@@ -34,7 +39,7 @@ export class ProjectList extends Component {
               <a
                 className="live-link"
                 href={
-                  "https://randybeans448.github.io/react-deploy-projet-10/#/"
+                  "https://quizzical-haibt-ebe8ac.netlify.app/"
                 }
                 target="_blank"
                 rel="noopener noreferrer"
@@ -69,9 +74,9 @@ export class ProjectList extends Component {
               <li className="project-tech-li"> Node.js </li>
               <li className="project-tech-li"> Express </li>
             </ul>
-            {/* <div className="live-div">
-                            <a className="live-link" href={"/"} target="_blank" rel="noopener noreferrer">Live view</a>
-                          </div> */}
+              <div className="live-div">
+                <a className="live-link" href={"https://mern-api-backend.herokuapp.com/"} target="_blank" rel="noopener noreferrer">Live view</a>
+              </div>
             <div className="github-image">
               <a
                 className="github-link"
@@ -254,7 +259,7 @@ export class ProjectList extends Component {
               <a
                 className="github-link"
                 href={
-                  "https://github.com/RandyBeans448/Project-4-OOP-Game-Show-App"
+                  "https://github.com/RandyBeans448/Project-4-OOP-Phrase-Hunter."
                 }
                 target="_blank"
                 rel="noopener noreferrer"

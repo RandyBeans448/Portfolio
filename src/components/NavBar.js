@@ -1,29 +1,27 @@
 import React, { Component } from "react";
+import HomePage from "./HomePage";
+import ProjectList from "./ProjectList";
+import Contact from "./Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export class NavBar extends Component {
+constructor(props) {
+  super(props)
+  this.scrollDiv = React.createRef();
+}
   componentDidMount() {
     AOS.init({
       duration: 2500,
     });
   }
-  scrollToProjects = () => {
-    window.scroll({
-      top: 900,
-      behavior: "smooth",
-    });
-  };
-
-  scrollToContact = () => {
-    window.scroll({
-      top: 4300,
-      behavior: "smooth",
-    });
-  };
+  
+  scrollToProjects = () => {window.scroll({top: 900, behavior: "smooth"}) };
+  scrollToContact = () => {this.scrollDiv.current.scrollIntoView({ behavior: 'smooth' })};
 
   render() {
     return (
+      <div>
       <div className="nav-bar-div">
         <ul data-aos="fade-left" className="nav-bar-ul">
           <li className="nav-bar-li">
@@ -38,7 +36,12 @@ export class NavBar extends Component {
           </li>
         </ul>
       </div>
+      <HomePage/>
+      <ProjectList/>
+      <Contact refProp={this.scrollDiv}/>
+      </div>
     );
+
   }
 }
 
