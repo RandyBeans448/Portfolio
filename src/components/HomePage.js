@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ParticlesContainer from "./Particles";
+// import ParticlesContainer from "./Particles";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -27,9 +27,9 @@ export class HomePage extends Component {
             </p>
           </div>
         </div>
-        {/* <div id="tsparticles" className="tsparticles"> */}
+        {/* <div id="tsparticles" className="tsparticles">
           <ParticlesContainer />
-        {/* </div> */}
+        </div> */}
       </div>
     );
   }
