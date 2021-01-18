@@ -4,7 +4,7 @@ import ParticlesContainer from "./Particles";
 const Div = () => {
 
     return (
-        <div>
+        <div className="div-prt">
     <ParticlesContainer/>
       </div>
     )

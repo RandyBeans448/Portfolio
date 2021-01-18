@@ -21,6 +21,12 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid black;
 }
 
+.div-prt {
+  position: absolute;
+  z-index: -999999999999999999999999999999999999999999999999999999999;
+
+}
+
 #tsparticles {
   position: absolute;
   bottom: 0;
