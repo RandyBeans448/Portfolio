@@ -1,5 +1,5 @@
 import React from "react";
-import ParticlesContainer from "./components/Particles";
+import ParticlesContainer from "./Particles";
 
 const Div = () => {
 

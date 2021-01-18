@@ -23,7 +23,7 @@ class ParticlesContainer extends Component {
               enable: true,
             },
             move: {
-              direction: "right",
+              // direction: "",
               enable: true,
               outMode: "bounce",
               random: false,

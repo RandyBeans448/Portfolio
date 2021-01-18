@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import HomePage from "./HomePage";
 import ProjectList from "./ProjectList";
+import Div from "./Div";
 import Contact from "./Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,6 +23,7 @@ constructor(props) {
   render() {
     return (
       <div>
+        <Div/>
       <div className="nav-bar-div">
         <ul data-aos="fade-left" className="nav-bar-ul">
           <li className="nav-bar-li">
