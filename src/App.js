@@ -7,7 +7,8 @@ import Particles from "react-tsparticles";
 
 export default () => (
   <div className="container">
-    <ParticlesContainer/>
     <NavBar />
+    <ParticlesContainer/>
   </div>
+  
 );
