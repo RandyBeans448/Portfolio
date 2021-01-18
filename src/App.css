@@ -21,14 +21,14 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid black;
 }
 
-/* .div-prt {
+.div-prt {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
   z-index: -1;
-} */
+}
 
 #tsparticles {
   position: absolute;
@@ -36,7 +36,7 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   right: 0;
   top: 0;
-  z-index: -999999999999999999999999999999999999999999999999999999999;
+  /* z-index: -999999999999999999999999999999999999999999999999999999999; */
 }
 
 ul {
