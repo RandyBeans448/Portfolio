@@ -23,7 +23,7 @@ constructor(props) {
   render() {
     return (
       <div>
-        <Div/>
+        
       <div className="nav-bar-div">
         <ul data-aos="fade-left" className="nav-bar-ul">
           <li className="nav-bar-li">
@@ -41,6 +41,8 @@ constructor(props) {
       <HomePage/>
       <ProjectList/>
       <Contact refProp={this.scrollDiv}/>
+      <div/>
+      <Div/>
       </div>
     );
 
