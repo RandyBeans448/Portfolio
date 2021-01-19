@@ -35,7 +35,7 @@ class ParticlesContainer extends Component {
                 enable: true,
                 value_area: 180000,
               },
-              value: 250,
+              value: 200,
             },
             opacity: {
               value: 0.5,
