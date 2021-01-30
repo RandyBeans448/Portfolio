@@ -36,7 +36,6 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   right: 0;
   top: 0;
-  /* z-index: -999999999999999999999999999999999999999999999999999999999; */
 }
 
 ul {
@@ -45,12 +44,16 @@ ul {
 }
 
 .nav-bar-div {
-  margin-left: 950px;
+  width: 1000px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 50px;
 }
 
 .nav-bar-ul {
   list-style-type: none;
+  width: 1000px;
   margin: 0;
   padding: 20px;
 }
@@ -58,7 +61,6 @@ ul {
 .nav-bar-li {
   display: inline;
   padding: 14px 16px;
-  margin-right: 10px;
 }
 
 .nav-buttons {
@@ -80,8 +82,10 @@ ul {
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 1000px;
   margin-top: 150px;
-  margin-left: 150px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 500px;
   top: -50px;
 }
@@ -106,24 +110,33 @@ ul {
 .project-h1-title {
   font-size: 3em;
   letter-spacing: 5px;
-  margin-left: 170px;
+  width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.project-h1-contact {
+  font-size: 3em;
+  letter-spacing: 5px;
+  width: 1000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 100px;
 }
 
 .projects-page {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 175px;
-  margin-left: 175px;
-  margin-bottom: 100px;
-  top: -50px;
+  text-align: center;
 }
 
 .project-list-item {
+  display: inline-block;
   min-width: 330px;
   max-width: 330px;
   height: 450px;
-  margin-right: 150px;
+  margin: 50px;
   border-style: solid;
   border-color: black;
   padding: 30px;
@@ -154,6 +167,7 @@ ul {
 }
 
 .project-tech-li {
+
   display: inline;
   margin-right: 15px;
 }
@@ -170,7 +184,7 @@ ul {
 
 .github-image {
   position: absolute;
-  margin-top: 50px;
+  margin-top: 25px;
   background: url("./images/github-brands.svg") rgba(255, 255, 255, 0.4) no-repeat;
   filter: invert(1);
   background-size: 30px 30px;
@@ -216,7 +230,7 @@ ul {
 }
 
 .live-link {
-  position: absolute;
+  display: inline-block;
   background-color: rgba(255, 255, 255, 0.4);
   color: black;
   text-decoration: none;
@@ -224,7 +238,7 @@ ul {
   padding-left: 70px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 195px;
+  padding-right: 187px;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(255, 255, 255, 0.1);
@@ -232,7 +246,6 @@ ul {
 }
 
 .live-link:hover {
-  position: absolute;
   z-index: 4;
   background-color: rgba(255, 0, 0, 0.7);
   border-color: black;
@@ -240,9 +253,9 @@ ul {
 }
 
 .contact-div {
-  min-width: 930px;
-  max-width: 930px;
-  margin-left: 150px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 40px;
   background-color: rgba(0, 0, 0, 0.2);
@@ -254,11 +267,12 @@ ul {
 }
 
 .contact-div-inner {
-  margin-left: 90px;
+  width: 100%;
+  margin: 0 auto
 }
 
 .contact-input {
-  width: 85%;
+  width: 700px;
   min-height: 35px;
   background-color: rgba(0, 0, 0, 0.2);
   border-style: solid;
@@ -269,8 +283,8 @@ ul {
 }
 
 .contact-textarea {
+  width: 700px;
   min-height: 300px;
-  min-width: 86%;
   background-color: rgba(0, 0, 0, 0.2);
   border-style: solid;
   border-width: 1px;
@@ -281,7 +295,6 @@ ul {
 
 .contact-button {
   padding: 20px 80px 20px 80px;
-  margin-left: 350px;
   border-top: 40px;
   border-style: solid;
   border-width: 1px;
@@ -293,6 +306,8 @@ ul {
 
 .back-to-top-div {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
   text-align: center;
 }
@@ -303,7 +318,9 @@ ul {
   cursor: pointer;
   letter-spacing: 5px;
   margin-top: 70px;
-  margin-left: 420px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 15px;
   background-color: Transparent;
   color: white;

@@ -32,7 +32,7 @@ export class Contact extends Component {
     console.log(this.state.contactRef)
     return (
       <div ref={this.props.refProp} data-aos="fade">
-        <h1 data-aos="fade-right" className="project-h1-title">
+        <h1 data-aos="fade-right" className="project-h1-contact">
           Contact &#9993;
         </h1>
         <form name="contact" action="/contact" method="POST" data-netlify="true" className="contact-div">
