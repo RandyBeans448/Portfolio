@@ -375,7 +375,8 @@ ul {
     position: absolute;
     margin: 0px auto;
     top: -105px;
-    left: -20px;
+    left: -65px;
+    /* right: 1px; */
   }
 
   .nav-bar-ul {
@@ -430,6 +431,15 @@ ul {
     margin-left: 15px;
     margin-bottom: 100px;
   }
+
+  .project-h1-contact {
+    text-align: left;
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-left: 15px;
+    margin-bottom: 100px;
+  }
+
 
   .projects-page {
     display: block;
@@ -494,7 +504,6 @@ ul {
 
   .github-image {
     position: absolute;
-    margin-top: 50px;
     background: url("./images/github-brands.svg") rgba(255, 255, 255, 0.4) no-repeat;
     filter: invert(1);
     background-size: 30px 30px;
@@ -505,7 +514,7 @@ ul {
     border-width: 1px;
     border-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    margin-top: 70px;
+
   }
 
   .github-image:hover {
@@ -523,7 +532,7 @@ ul {
   }
 
   .github-link {
-    margin-top: 500px;
+
     text-decoration: none;
     font-size: 17px;
     padding-left: 70px;
@@ -543,7 +552,6 @@ ul {
   }
 
   .live-link {
-    position: absolute;
     background-color: rgba(255, 255, 255, 0.4);
     color: black;
     font-size: 15px;
@@ -557,7 +565,7 @@ ul {
     border-width: 1px;
     border-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    margin-bottom: 50px;
+    /* margin-bottom: 5px; */
   }
 
   .live-link:hover {
@@ -569,8 +577,9 @@ ul {
   }
 
   .contact-div {
-    min-width: 260px;
-    max-width: 260px;
+    text-align: left;
+    min-width: 300px;
+    max-width: 300px;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -583,7 +592,7 @@ ul {
   }
 
   .contact-div-inner {
-    margin-left: 30px;
+    margin-left: 5%;
   }
 
   .contact-input {
@@ -600,7 +609,8 @@ ul {
 
   .contact-textarea {
     min-height: 200px;
-    min-width: 86%;
+    min-width: 85%;
+    max-width: 85%;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.2);
     border-style: solid;
