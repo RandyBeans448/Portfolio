@@ -410,8 +410,8 @@ ul {
     flex-direction: column;
     margin: 100px 50px 175px 20px;
     position: relative;
-    min-width: 220px;
-    max-width: 220px;
+    min-width: 320px;
+    max-width: 320px;
   }
 
   .home-page-p {
@@ -430,9 +430,10 @@ ul {
   }
 
   .project-h1-title {
+    text-align: center;
     font-size: 32px;
     letter-spacing: 5px;
-    margin-left: 15px;
+    margin-left: 70px;
     margin-bottom: 100px;
   }
 
@@ -508,6 +509,7 @@ ul {
     position: absolute;
     background: url("./images/github-brands.svg") rgba(255, 255, 255, 0.4) no-repeat;
     filter: invert(1);
+    margin-left: 20px;
     background-size: 30px 30px;
     background-position: 20px;
     padding-top: 10px;
@@ -516,7 +518,6 @@ ul {
     border-width: 1px;
     border-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-
   }
 
   .github-image:hover {
@@ -539,7 +540,7 @@ ul {
     padding-left: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 75px;
+    padding-right: 80px;
     color: black;
     letter-spacing: 1px;
   }
@@ -566,7 +567,6 @@ ul {
     border-width: 1px;
     border-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    /* margin-bottom: 5px; */
   }
 
   .live-link:hover {
@@ -579,8 +579,8 @@ ul {
 
   .contact-div {
     text-align: left;
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 310px;
+    max-width: 310px;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 40px;
