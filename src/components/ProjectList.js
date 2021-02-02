@@ -27,7 +27,8 @@ export class ProjectList extends Component {
               database REST API. This full stack JavaScript application will
               allow users to view a list of courses and the detail for a
               specific course, sign up to create an account or sign in with an
-              existing account, and create, update, or delete courses.
+              existing account, and create, update, or delete courses. Follow the
+               Github link for the log in details.
             </p>
             <p> Built with: </p>
             <ul className="project-tech-ul">
